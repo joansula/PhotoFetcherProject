@@ -9,7 +9,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link />
     <link rel="stylesheet" href="style.css" />
     <title>Photo Fetcher - Joan</title>
   </head>
@@ -18,31 +17,41 @@
     <div class="container">
       <div class="row m-3">
         <div class="col text-center">
-          <h1>Photo Fetcher</h1>
+          <h1>Photo Fetcher<span> By Joan Sula </span></h1>
         </div>
       </div>
-      <div class="row mb-3">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5">
-          <button onclick="toggleGrayscale()">Toggle Grayscale</button>
-          Toggle Grayscale
+      <div class="row mb-2">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customSwitch1"
+          />
+          <label
+            class="custom-control-label"
+            for="customSwitch1"
+            onclick="toggleGrayscale()"
+          >
+            <span>Toggle this switch element</span>
+          </label>
         </div>
-        <div class="col-lg-5 text-right">
-          <button onclick="loadImages()">Load Images</button>
+        <div class="col-lg-4 text-right">
+          <button class="custom-btn" onclick="loadImages()">Load Images</button>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-2"></div>
       </div>
 
       <div class="row justify-content-center">
         <div class="col-6">
-          <img id="img1" class="img-fluid photo" />
-          <img id="img2" class="img-fluid photo" />
+          <img id="img1" class="img-fluid photo bd-placeholder-img" />
+          <img id="img2" class="img-fluid photo bd-placeholder-img" />
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-6">
-          <img id="img3" class="img-fluid photo" />
-          <img id="img4" class="img-fluid photo" />
+          <img id="img3" class="img-fluid photo bd-placeholder-img" />
+          <img id="img4" class="img-fluid photo bd-placeholder-img" />
         </div>
       </div>
     </div>

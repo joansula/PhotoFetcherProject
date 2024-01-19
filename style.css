@@ -1,12 +1,40 @@
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Helvetica, Sans-Serif;
 }
 
+span {
+  font-size: 15px;
+  color: #5d5d5d;
+}
 .photo {
   margin-bottom: 16px;
   margin-left: 16px;
+  border-radius: 5px;
 }
 
 .grayscale {
   filter: grayscale(100%);
+}
+
+.custom-btn {
+  background-color: #35257b;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-family: Helvetica, Sans-Serif;
+}
+
+.custom-btn:hover {
+  background-color: #463a7a;
+  color: #ffffff;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #35257b;
+}
+
+.bd-placeholder-img {
+  width: 230px;
+  height: 230px;
+  background-color: #c8c8c9;
 }

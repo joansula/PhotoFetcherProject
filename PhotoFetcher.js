@@ -27,3 +27,7 @@ function toggleGrayscale() {
     img.classList.toggle("grayscale");
   });
 }
+
+toggleSwitch.addEventListener("change", function () {
+  toggleGrayscale();
+});
