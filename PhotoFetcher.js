@@ -20,3 +20,10 @@ function loadImages() {
     (response) => (img4.src = response.url)
   );
 }
+
+function toggleGrayscale() {
+  const images = document.querySelectorAll("img");
+  images.forEach((img) => {
+    img.classList.toggle("grayscale");
+  });
+}
