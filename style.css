@@ -1,5 +1,6 @@
 h1 {
   font-family: Helvetica, Sans-Serif;
+  margin-left: 170px;
 }
 
 span {
@@ -34,7 +35,21 @@ span {
 }
 
 .bd-placeholder-img {
-  width: 230px;
-  height: 230px;
+  width: 367px;
+  height: 367px;
   background-color: #c8c8c9;
+}
+.controls {
+  max-width: 735px;
+  margin-left: 200px;
+}
+
+.photos-align {
+  margin: auto;
+  max-width: 750px;
+}
+
+.custom-btn-more-photos {
+  max-width: 750px;
+  margin-left: 190px;
 }
